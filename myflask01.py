@@ -12,5 +12,9 @@ def hello_world():
 def rob():
     return "Hello Rob\n"
 
+@app.route("/hello/<name>")
+def hello_name(name):
+    return "Hello {}\n".format(name [::-1])
+
 if __name__ == "__main__":
    app.run(port=5006) # runs the application

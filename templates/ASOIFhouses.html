@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<body>
+		<table>
+			{% for houses in houses %}
+			{% if houses.house is eq "House Name" %}
+			<tr><th>{{houses.house}}</th><th>{{houses.words}}</th></tr>
+			{% else %}
+			<tr><td>{{houses.house}}</td><td>{{houses.words}}</td></tr>
+			{% endif %}
+			{% endfor %}
+		</table>
+	</body>
+</html>
+	
